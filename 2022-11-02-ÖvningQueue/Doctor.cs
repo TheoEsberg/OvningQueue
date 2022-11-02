@@ -21,5 +21,11 @@ namespace _2022_11_02_ÖvningQueue
             Console.WriteLine("Salary: {0}kr", this.Salary);
             Console.WriteLine("Work Time: {0}h\n", this.WorkTime);
         }
+
+        public void WriteRecipe(Patient patient)
+        {
+            Console.WriteLine("{0} skrev ut ett recept för {1} åt {2}", this.Name, patient.Sickness, patient.Name);
+            patient.Recept += "har recept för " + patient.Sickness;
+        }
     }
 }
